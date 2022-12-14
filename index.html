@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    <title>Guitar Project</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <div class="navBar">
+        <ul>
+          <li class="nav_li"><a href="/">Home</a></li>
+          <li class="nav_li"><a href="/purchase.html">Purchase</a></li>
+          <li class="nav_li"><a href="/confirm.html">Confirmation</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div id="image_container">
+          <img src="images/img1.jpg" id="image_display" />
+        </div>
+        <div class="button">
+          <button class="img_bttn" onclick="prevImage()">Previous</button>
+          <button class="img_bttn" onclick="nextImage()">Next</button>
+        </div>
+        <div id="product_container">
+          <button class="collapsible">Product Info</button>
+          <div class="sub_div" id="product_info"></div>
+          <button class="collapsible">Shipping Info</button>
+          <div class="sub_div" id="shipping_info"></div>
+          <button class="collapsible">Customer Review</button>
+          <div class="sub_div" id="customer_review"></div>
+        </div>
+        <button class="buy_bttn" id="buy_button" onclick="redirect_page()" type="button">Buy</button>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    <title>Guitar Project</title>
+  </head>
+  <body>
+    <div>
+      <div class="navBar">
+        <ul>
+          <li class="nav_li"><a href="/">Home</a></li>
+          <li class="nav_li"><a href="/purchase.html">Purchase</a></li>
+          <li class="nav_li"><a href="/confirm.html">Confirmation</a></li>
+        </ul>
+      </div>
+      <div id="confirmation_conatiner">
+        <h1>Your Purchase Details</h1>
+        <div id="confirmation_image_div">
+          <img
+            src="/"
+            id="confirmation_image"
+            style="height: 100%; width: 100%; object-fit: contain"
+          />
+        </div>
+        <div id="confirmation_detail">
+          <ul>
+            <li class="confirm_li">
+              <label class="confirm_data_label">Product Description:</label>
+              <p class="confirm_item_info" id="product_details"></p>
+            </li>
+            <li class="confirm_li">
+              <label class="confirm_data_label">Shipping Details:</label>
+              <p class="confirm_item_info" id="shipping_details"></p>
+            </li>
+            <li class="confirm_li">
+              <label class="confirm_data_label">First Name:</label>
+              <p class="confirm_item_info" id="customer_firstName"></p>
+            </li>
+            <li class="confirm_li">
+              <label class="confirm_data_label">Last Name:</label>
+              <p class="confirm_item_info" id="customer_lastName"></p>
+            </li>
+            <li class="confirm_li">
+              <label class="confirm_data_label">Phone Number:</label>
+              <p class="confirm_item_info" id="customer_phNumber"></p>
+            </li>
+            <li class="confirm_li">
+              <label class="confirm_data_label">Email:</label>
+              <p class="confirm_item_info" id="customer_email"></p>
+            </li>
+          </ul>
+        </div>
+        <button class="buy_bttn" id="go_to_home" onclick="goToHome()" type="button">Go To Home</button>
+      </div>
+    </div>
+    <script src="confirm_page.js"></script>
+  </body>
+</html>
